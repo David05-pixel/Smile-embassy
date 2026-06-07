@@ -10,244 +10,279 @@
 
     <title>Contact Us | Smile Embassy</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- FONT AWESOME -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- FAVICON -->
+    <link rel="icon"
+    type="image/jpeg"
+    href="Images/favicon.jpg">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async
+    src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX">
+    </script>
+
+    <script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+
+    </script>
+
 </head>
 
 <body>
-    <!-- FLOATING WHATSAPP BUTTON -->
 
-<a href="https://wa.me/2348119030009?text=Hello%20Smile%20Embassy!%20👋%20I'd%20like%20to%20ask%20about%20your%20services%20or%20book%20an%20appointment."
+<!-- =========================================
+TOP BAR
+========================================= -->
 
-class="whatsapp-float"
+<div class="top-bar">
 
-target="_blank">
+    <div class="container top-bar-flex">
 
-    💬
+        <div class="top-contact">
 
-</a>
+            <a href="tel:+2348119030009"
+            class="phone-click">
 
-<!-- WHATSAPP POPUP -->
+                📞 08119030009
 
-<div class="whatsapp-popup" id="whatsappPopup">
+            </a>
 
-    Need help? Chat with us!
+            <span>|</span>
+
+            🕐 Mon – Sat: 9am – 6pm
+
+        </div>
+
+        <div class="top-socials">
+
+            <a href="https://wa.me/2348119030009"
+            target="_blank"
+            class="whatsapp-click">
+
+                WhatsApp
+
+            </a>
+
+            <a href="https://instagram.com/smile_embassy"
+            target="_blank">
+
+                Instagram
+
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
 
-    <!-- HERO SECTION -->
+<!-- =========================================
+HEADER
+========================================= -->
 
-    <section class="contact-hero">
+<header class="main-header">
 
-        <div class="hero-overlay">
+    <div class="container header-flex">
 
-            <div class="hero-content">
+        <a href="index.html"
+        class="logo">
 
-                <h1>
-                    We're easy to find.
-                    Even easier to talk to.
-                </h1>
+            Smile Embassy
 
-            </div>
+        </a>
 
-        </div>
+        <nav class="nav-links">
 
-    </section>
+            <a href="index.html">Home</a>
 
-    <!-- CONTACT SECTION -->
+            <a href="about.html">About</a>
 
-    <section class="contact-section">
+            <a href="services.html">Services</a>
 
-        <div class="contact-container">
+            <a href="blog.html">Blog</a>
 
-            <!-- LEFT COLUMN -->
+            <a href="contact.html" class="active">
+                Contact
+            </a>
 
-            <div class="contact-info">
+            <a href="testimonials.html">Testimonials</a>
 
-                <h2>Contact Information</h2>
+        </nav>
 
-                <p>
-                    📍 190/192 Ikorodu Road,
-                    Elediye Busstop,
-                    beside First Bank Onipanu,
-                    Somolu, Lagos
-                </p>
+        <a href="appointment.html"
+        class="header-btn">
 
-                <p>
-                    📞
-                    <a href="tel:08119030009">
-                        08119030009
-                    </a>
-                </p>
+            Book Appointment
 
-                <p>
-                    💬
-                    <a href="https://wa.me/2348119030009">
-                        WhatsApp Chat
-                    </a>
-                </p>
+        </a>
 
-                <p>
-                    📧
-                    <a href="mailto:smileembassydentalng@gmail.com">
-                        smileembassydentalng@gmail.com
-                    </a>
-                </p>
+        <div class="menu-toggle"
+        onclick="openMenu()">
 
-                <p>
-                    📷
-                    <a href="https://instagram.com/smile_embassy"
-                    target="_blank">
-
-                        @smile_embassy
-
-                    </a>
-                </p>
-
-                <p>
-                    🕐 Mon–Sat: 9am–6pm
-                    <br>
-                    Sun: By appointment
-                </p>
-
-            </div>
-
-            <!-- RIGHT COLUMN -->
-
-            <div class="contact-map">
-
-                <iframe
-                src="https://www.google.com/maps?q=190/192+Ikorodu+Road+Onipanu+Lagos&output=embed"
-                allowfullscreen=""
-                loading="lazy">
-                </iframe>
-
-            </div>
+            ☰
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- QUICK CONTACT FORM -->
+</header>
 
-    <section class="quick-contact">
+<!-- MOBILE MENU -->
 
-        <div class="form-container">
+<div class="mobile-menu"
+id="mobileMenu">
 
-            <h2>Send Us A Message</h2>
+    <div class="mobile-menu-top">
 
-            <form>
+        <h2>Smile Embassy</h2>
 
-                <input type="text"
-                placeholder="Your Name"
-                required>
+        <span onclick="closeMenu()">✕</span>
 
-                <input type="tel"
-                placeholder="Phone Number"
-                required>
+    </div>
 
-                <textarea
-                placeholder="Your Message"
-                required>
-                </textarea>
+    <a href="index.html">Home</a>
 
-                <button type="submit">
-                    Send Message
-                </button>
+    <a href="about.html">About</a>
 
-            </form>
+    <a href="services.html">Services</a>
 
-        </div>
+    <a href="blog.html">Blog</a>
 
-    </section>
+    <a href="contact.html">Contact</a>
 
-    <!-- FINAL CTA -->
+    <a href="appointment.html"
+    class="mobile-book-btn">
 
-    <section class="contact-cta">
+        Book Appointment
 
-        <div class="container">
+    </a>
 
-            <h2>
-                Ready to book your visit?
-            </h2>
+</div>
 
-            <p>
-                Your healthier, brighter smile starts here.
-            </p>
+<!-- WHATSAPP FLOAT -->
 
-            <div class="cta-buttons">
+<a href="https://wa.me/2348119030009"
+class="whatsapp-float whatsapp-click"
+target="_blank">
 
-                <a href="appointment.html"
-                class="primary-btn">
+    <i class="fab fa-whatsapp"></i>
 
-                    Book Appointment
+</a>
 
-                </a>
+<!-- =========================================
+CONTACT HERO
+========================================= -->
 
-                <a href="https://wa.me/2348119030009"
-                class="whatsapp-btn">
-
-                    WhatsApp Us
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Contact | Smile Embassy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- SECTION 1 HERO -->
 <section class="contact-hero">
 
-    <div class="container">
+    <div class="hero-overlay">
 
-        <h1>We’re easy to find. Even easier to talk to.</h1>
+        <div class="container hero-content">
+
+            <h1>
+                We’re easy to find.
+                Even easier to talk to.
+            </h1>
+
+            <p>
+                Visit Smile Embassy Dental Specialist Clinic
+                in Lagos or contact us anytime through
+                WhatsApp, phone call, or email.
+            </p>
+
+        </div>
 
     </div>
 
 </section>
 
-<!-- SECTION 2 CONTACT + MAP -->
-<section class="contact-main">
+<!-- =========================================
+CONTACT INFORMATION
+========================================= -->
 
-    <div class="container contact-grid">
+<section class="contact-section">
 
-        <!-- LEFT -->
+    <div class="container contact-container">
+
         <div class="contact-info">
 
             <h2>Contact Information</h2>
 
-            <p>📍 190/192 Ikorodu Road, Onipanu, Lagos</p>
-            <p>📞 08119030009</p>
-            <p>💬 WhatsApp: 08119030009</p>
-            <p>📧 smileembassydentalng@gmail.com</p>
-            <p>🕐 Mon–Sat: 9am–6pm</p>
+            <div class="info-box">
+
+                <i class="fas fa-map-marker-alt"></i>
+
+                <p>
+                    190/192 Ikorodu Road,
+                    Elediye Bus Stop,
+                    beside First Bank Onipanu,
+                    Somolu, Lagos.
+                </p>
+
+            </div>
+
+            <div class="info-box">
+
+                <i class="fas fa-phone"></i>
+
+                <a href="tel:+2348119030009"
+                class="phone-click">
+
+                    08119030009
+
+                </a>
+
+            </div>
+
+            <div class="info-box">
+
+                <i class="fab fa-whatsapp"></i>
+
+                <a href="https://wa.me/2348119030009"
+                target="_blank"
+                class="whatsapp-click">
+
+                    Chat on WhatsApp
+
+                </a>
+
+            </div>
+
+            <div class="info-box">
+
+                <i class="fas fa-envelope"></i>
+
+                <a href="mailto:smileembassydentalng@gmail.com">
+
+                    smileembassydentalng@gmail.com
+
+                </a>
+
+            </div>
 
         </div>
 
-        <!-- RIGHT (MAP) -->
-        <div class="map">
+        <div class="contact-map">
 
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18..."
-                width="100%"
-                height="350"
-                style="border:0;"
-                loading="lazy">
+            src="https://www.google.com/maps?q=190/192+Ikorodu+Road+Onipanu+Lagos&output=embed"
+            loading="lazy"
+            allowfullscreen="">
             </iframe>
 
         </div>
@@ -256,20 +291,40 @@ target="_blank">
 
 </section>
 
-<!-- SECTION 3 QUICK FORM -->
+<!-- =========================================
+CONTACT FORM
+========================================= -->
+
 <section class="quick-contact">
 
-    <div class="container small">
+    <div class="container form-container">
 
-        <h2>Send us a quick message</h2>
+        <h2>Send Us A Message</h2>
 
-        <form action="thank-you.html" class="form">
+        <form class="form"
+        action="thank-you.html">
 
-            <input type="text" placeholder="Your Name" required>
-            <input type="tel" placeholder="Phone Number" required>
-            <textarea placeholder="Your Message"></textarea>
+            <input type="text"
+            placeholder="Your Name"
+            required>
 
-            <button type="submit">Send Message</button>
+            <input type="tel"
+            placeholder="Phone Number"
+            required>
+
+            <input type="email"
+            placeholder="Email Address">
+
+            <textarea
+            placeholder="Your Message"
+            required></textarea>
+
+            <button type="submit"
+            class="btn-primary">
+
+                Send Message
+
+            </button>
 
         </form>
 
@@ -277,24 +332,148 @@ target="_blank">
 
 </section>
 
-<!-- SECTION 4 CTA -->
-<section class="cta">
+<!-- =========================================
+FOOTER
+========================================= -->
 
-    <div class="container">
+<footer class="footer">
 
-        <h2>Your smile is one message away</h2>
+    <div class="container footer-grid">
 
-        <a href="appointment.html" class="btn-primary">
-            Book Appointment
-        </a>
+        <div>
 
-        <a href="https://wa.me/2348119030009" class="btn-whatsapp">
-            WhatsApp Us
-        </a>
+            <h2 class="footer-logo">
+                Smile Embassy
+            </h2>
+
+            <p>
+                Modern family dental care in Lagos.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Contact Info</h3>
+
+            <p>📍 Onipanu, Lagos</p>
+
+            <p>📞 08119030009</p>
+
+            <p>📧 smileembassydentalng@gmail.com</p>
+
+            <p>🕐 Mon – Sat: 9am – 6pm</p>
+
+        </div>
 
     </div>
 
-</section>
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Smile Embassy Dental Specialist Clinic.
+            All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- MOBILE CTA -->
+
+<div class="mobile-cta-bar">
+
+    <a href="tel:+2348119030009"
+    class="call-btn phone-click">
+
+        📞 Call
+
+    </a>
+
+    <a href="https://wa.me/2348119030009"
+    class="whatsapp-btn whatsapp-click">
+
+        💬 WhatsApp
+
+    </a>
+
+</div>
+
+<!-- =========================================
+JAVASCRIPT
+========================================= -->
+
+<script>
+
+function openMenu() {
+
+    document.getElementById("mobileMenu").style.right = "0";
+
+}
+
+function closeMenu() {
+
+    document.getElementById("mobileMenu").style.right = "-100%";
+
+}
+
+/* PHONE CLICK EVENT */
+
+document.querySelectorAll('.phone-click')
+.forEach(function(button){
+
+    button.addEventListener('click', function(){
+
+        gtag('event', 'phone_click', {
+
+            event_category: 'Contact',
+            event_label: 'Phone Call'
+
+        });
+
+    });
+
+});
+
+/* WHATSAPP CLICK EVENT */
+
+document.querySelectorAll('.whatsapp-click')
+.forEach(function(button){
+
+    button.addEventListener('click', function(){
+
+        gtag('event', 'whatsapp_click', {
+
+            event_category: 'Contact',
+            event_label: 'WhatsApp Click'
+
+        });
+
+    });
+
+});
+
+</script>
 
 </body>
 </html>

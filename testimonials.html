@@ -10,348 +10,453 @@
 
     <title>Testimonials | Smile Embassy</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- FONT AWESOME -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- FAVICON -->
+    <link rel="icon"
+    type="image/jpeg"
+    href="Images/favicon.jpg">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async
+    src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX">
+    </script>
+
+    <script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+
+        dataLayer.push(arguments);
+
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+
+    </script>
+
 </head>
 
 <body>
-    <button onclick="openModal()" class="book-btn">
 
-Give Testimonial
+<!-- =========================================
+TOP BAR
+========================================= -->
 
-</button>
-    <!-- FLOATING WHATSAPP BUTTON -->
+<div class="top-bar">
 
-<a href="https://wa.me/2348119030009?text=Hello%20Smile%20Embassy!%20👋%20I'd%20like%20to%20ask%20about%20your%20services%20or%20book%20an%20appointment."
+    <div class="container top-bar-flex">
 
-class="whatsapp-float"
+        <div class="top-contact">
 
-target="_blank">
+            <a href="tel:+2348119030009"
+            class="phone-click">
 
-    💬
+                📞 08119030009
 
-</a>
+            </a>
 
-<!-- WHATSAPP POPUP -->
+            <span>|</span>
 
-<div class="whatsapp-popup" id="whatsappPopup">
+            🕐 Mon – Sat: 9am – 6pm
 
-    Need help? Chat with us!
+        </div>
+
+        <div class="top-socials">
+
+            <a href="https://wa.me/2348119030009"
+            target="_blank"
+            class="whatsapp-click">
+
+                WhatsApp
+
+            </a>
+
+            <a href="https://instagram.com/smile_embassy"
+            target="_blank">
+
+                Instagram
+
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
 
-    <!-- HERO SECTION -->
+<!-- =========================================
+HEADER
+========================================= -->
 
-    <section class="testimonials-hero">
+<header class="main-header">
 
-        <div class="hero-overlay">
+    <div class="container header-flex">
 
-            <div class="hero-content">
+        <!-- LOGO -->
 
-                <h1>
-                    Smiles that speak louder than words.
-                </h1>
+        <a href="index.html"
+        class="logo">
 
-                <p>
-                    Hundreds of Lagos families trust us
-                    with their smiles. Here's why.
-                </p>
+            Smile Embassy
 
-            </div>
+        </a>
 
-        </div>
+        <!-- NAVIGATION -->
 
-    </section>
+        <nav class="nav-links">
 
-    <!-- TESTIMONIAL GRID -->
+            <a href="index.html">Home</a>
 
-    <section class="testimonials-section">
+            <a href="about.html">About</a>
 
-        <div class="container">
+            <a href="services.html">Services</a>
 
-            <div class="testimonials-grid">
+            <a href="blog.html">Blog</a>
 
-                <!-- CARD 1 -->
+            <a href="testimonials.html">Testimonials</a>
 
-                <div class="testimonial-card">
+            <a href="contact.html">Contact</a>
 
-                    <img src="patient1.jpg"
-                    alt="Patient">
+        </nav>
 
-                    <div class="stars">
+        <!-- BOOK BUTTON -->
 
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+        <a href="appointment.html"
+        class="header-btn">
 
-                    </div>
+            Book Appointment
 
-                    <p class="quote">
+        </a>
 
-                        "I took my 6-year-old here terrified
-                        of dentists. She came out asking
-                        when we could come back.
-                        The team at Smile Embassy made
-                        her feel like a princess."
+        <!-- MOBILE MENU BUTTON -->
 
-                    </p>
+        <div class="menu-toggle"
+        onclick="openMenu()">
 
-                    <h3>
-                        Mrs. Adeoye
-                    </h3>
-
-                    <span>
-                        Gbagada — Family Dental Care
-                    </span>
-
-                </div>
-
-                <!-- CARD 2 -->
-
-                <div class="testimonial-card">
-
-                    <img src="patient2.jpg"
-                    alt="Patient">
-
-                    <div class="stars">
-
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-
-                    <p class="quote">
-
-                        "I'd been hiding my smile for years
-                        because of stains and a chipped tooth.
-                        After my whitening and veneer
-                        treatment at Smile Embassy,
-                        I can't stop smiling."
-
-                    </p>
-
-                    <h3>
-                        Tola O.
-                    </h3>
-
-                    <span>
-                        Yaba — Whitening + Veneers
-                    </span>
-
-                </div>
-
-                <!-- CARD 3 -->
-
-                <div class="testimonial-card">
-
-                    <img src="patient3.jpg"
-                    alt="Patient">
-
-                    <div class="stars">
-
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-
-                    <p class="quote">
-
-                        "Honest pricing. Friendly staff.
-                        Modern equipment. The full package.
-                        My whole family is now patients here."
-
-                    </p>
-
-                    <h3>
-                        Mr. Okonkwo
-                    </h3>
-
-                    <span>
-                        Bariga — Scaling and Polishing
-                    </span>
-
-                </div>
-
-            </div>
+            ☰
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- VIDEO TESTIMONIALS -->
+</header>
 
-    <section class="video-testimonials">
+<!-- =========================================
+MOBILE MENU
+========================================= -->
 
-        <div class="container">
+<div class="mobile-menu"
+id="mobileMenu">
 
-            <h2>
-                Video Testimonials
-            </h2>
+    <div class="mobile-menu-top">
 
-            <p class="video-subtitle">
+        <h2>Smile Embassy</h2>
 
-                Hear directly from happy patients who
-                trusted Smile Embassy with their smiles.
+        <span onclick="closeMenu()">
+            ✕
+        </span>
 
+    </div>
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="blog.html">Blog</a>
+
+    <a href="testimonials.html">Testimonials</a>
+
+    <a href="contact.html">Contact</a>
+
+    <a href="appointment.html"
+    class="mobile-book-btn">
+
+        Book Appointment
+
+    </a>
+
+</div>
+
+<!-- =========================================
+WHATSAPP FLOAT BUTTON
+========================================= -->
+
+<a href="https://wa.me/2348119030009?text=Hello%20Smile%20Embassy!%20👋"
+class="whatsapp-float whatsapp-click"
+target="_blank">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- =========================================
+TESTIMONIAL HERO
+========================================= -->
+
+<section class="testimonials-hero">
+
+    <div class="hero-overlay">
+
+        <div class="container hero-content">
+
+            <h1>
+                Smiles That Speak Louder Than Words
+            </h1>
+
+            <p>
+                Families across Lagos trust Smile Embassy
+                for professional, caring, and affordable
+                dental treatment.
             </p>
 
-            <div class="video-grid">
-
-                <div class="video-card">
-
-                    <iframe
-                    src="https://www.youtube.com/embed/VIDEO_ID"
-                    title="Video Testimonial"
-                    allowfullscreen>
-                    </iframe>
-
-                </div>
-
-                <div class="video-card">
-
-                    <iframe
-                    src="https://www.youtube.com/embed/VIDEO_ID"
-                    title="Video Testimonial"
-                    allowfullscreen>
-                    </iframe>
-
-                </div>
-
-                <div class="video-card">
-
-                    <iframe
-                    src="https://www.youtube.com/embed/VIDEO_ID"
-                    title="Video Testimonial"
-                    allowfullscreen>
-                    </iframe>
-
-                </div>
-
-            </div>
-
         </div>
-
-    </section>
-
-    <!-- FINAL CTA -->
-
-    <section class="testimonial-cta">
-
-        <div class="container">
-
-            <h2>
-                Your smile story starts here.
-            </h2>
-
-            <div class="cta-buttons">
-
-                <a href="appointment.html"
-                class="primary-btn">
-
-                    Book Appointment
-
-                </a>
-
-                <a href="#"
-                class="whatsapp-btn">
-
-                    WhatsApp Us
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Testimonials | Smile Embassy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- SECTION 1 HERO -->
-<section class="test-hero">
-
-    <div class="container">
-
-        <h1>Smiles that speak louder than words</h1>
-
-        <p>Hundreds of Lagos families trust us with their smiles.</p>
 
     </div>
 
 </section>
 
-<!-- SECTION 2 TESTIMONIAL GRID -->
+<!-- =========================================
+TESTIMONIALS SECTION
+========================================= -->
+
 <section class="testimonials-page">
 
-    <div class="container grid-3">
+    <div class="container">
 
-        <!-- CARD 1 -->
-        <div class="test-card">
-            <p class="stars">★★★★★</p>
-            <p>
-                “My daughter used to fear dentists, now she loves coming here.”
-            </p>
-            <h4>Mrs. Adeoye</h4>
-            <small>Family Dental Care • Gbagada</small>
-        </div>
+        <div class="testimonials-grid">
 
-        <!-- CARD 2 -->
-        <div class="test-card">
-            <p class="stars">★★★★★</p>
-            <p>
-                “My smile transformation was life-changing. Worth every naira.”
-            </p>
-            <h4>Tola O.</h4>
-            <small>Whitening + Veneers • Yaba</small>
-        </div>
+            <!-- CARD 1 -->
 
-        <!-- CARD 3 -->
-        <div class="test-card">
-            <p class="stars">★★★★★</p>
-            <p>
-                “Professional, honest and affordable. Highly recommended.”
-            </p>
-            <h4>Mr. Okonkwo</h4>
-            <small>Scaling & Polishing • Bariga</small>
+            <div class="testimonial-card">
+
+                <img src="Images/patient1.jpg"
+                alt="Patient Review">
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+                <p>
+
+                    “My daughter used to fear dentists,
+                    but now she gets excited whenever
+                    we visit Smile Embassy.”
+
+                </p>
+
+                <h3>
+                    Mrs. Adeoye
+                </h3>
+
+                <span>
+                    Family Dental Care • Gbagada
+                </span>
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="testimonial-card">
+
+                <img src="Images/patient2.jpg"
+                alt="Patient Review">
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+                <p>
+
+                    “The whitening treatment completely
+                    transformed my smile and confidence.”
+
+                </p>
+
+                <h3>
+                    Tola O.
+                </h3>
+
+                <span>
+                    Teeth Whitening • Yaba
+                </span>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="testimonial-card">
+
+                <img src="Images/patient3.jpg"
+                alt="Patient Review">
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+                <p>
+
+                    “Professional, clean, friendly,
+                    and honestly affordable.”
+
+                </p>
+
+                <h3>
+                    Mr. Okonkwo
+                </h3>
+
+                <span>
+                    Scaling & Polishing • Bariga
+                </span>
+
+            </div>
+
+            <!-- CARD 4 -->
+
+            <div class="testimonial-card">
+
+                <img src="Images/patient4.jpg"
+                alt="Patient Review">
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+                <p>
+
+                    “Their braces treatment was smooth,
+                    and the results were amazing.”
+
+                </p>
+
+                <h3>
+                    Esther A.
+                </h3>
+
+                <span>
+                    Dental Braces • Surulere
+                </span>
+
+            </div>
+
+            <!-- CARD 5 -->
+
+            <div class="testimonial-card">
+
+                <img src="Images/patient5.jpg"
+                alt="Patient Review">
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+                <p>
+
+                    “The clinic staff made me feel calm
+                    throughout my dental procedure.”
+
+                </p>
+
+                <h3>
+                    Daniel K.
+                </h3>
+
+                <span>
+                    Tooth Extraction • Somolu
+                </span>
+
+            </div>
+
+            <!-- CARD 6 -->
+
+            <div class="testimonial-card">
+
+                <img src="Images/patient6.jpg"
+                alt="Patient Review">
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+                <p>
+
+                    “One of the best dental clinics
+                    I’ve visited in Lagos.”
+
+                </p>
+
+                <h3>
+                    Chioma E.
+                </h3>
+
+                <span>
+                    General Dentistry • Ikeja
+                </span>
+
+            </div>
+
         </div>
 
     </div>
 
 </section>
 
-<!-- SECTION 3 VIDEO TESTIMONIALS -->
-<section class="videos">
+<!-- =========================================
+VIDEO TESTIMONIALS
+========================================= -->
+
+<section class="video-testimonials">
 
     <div class="container">
 
-        <h2>Video Testimonials</h2>
+        <h2>
+            Patient Stories
+        </h2>
 
         <div class="video-grid">
 
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video Testimonial" allowfullscreen></iframe>
+            <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Smile Embassy Testimonial"
+            loading="lazy"
+            allowfullscreen>
+            </iframe>
 
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video Testimonial" allowfullscreen></iframe>
+            <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Smile Embassy Testimonial"
+            loading="lazy"
+            allowfullscreen>
+            </iframe>
 
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video Testimonial" allowfullscreen></iframe>
+            <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Smile Embassy Testimonial"
+            loading="lazy"
+            allowfullscreen>
+            </iframe>
 
         </div>
 
@@ -359,104 +464,231 @@ target="_blank">
 
 </section>
 
-<!-- SECTION 4 CTA -->
-<section class="cta">
+<!-- =========================================
+CTA SECTION
+========================================= -->
+
+<section class="contact-cta">
 
     <div class="container">
 
-        <h2>Your smile story starts here</h2>
+        <h2>
+            Your Smile Story Starts Here
+        </h2>
 
-        <a href="appointment.html" class="btn-primary">
-            Book Appointment
-        </a>
+        <p>
+            Let Smile Embassy help you achieve
+            a healthier and more confident smile.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="appointment.html"
+            class="btn-primary">
+
+                Book Appointment
+
+            </a>
+
+            <a href="https://wa.me/2348119030009"
+            class="btn-whatsapp whatsapp-click">
+
+                WhatsApp Us
+
+            </a>
+
+        </div>
 
     </div>
 
 </section>
-<!-- FOOTER -->
+
+<!-- =========================================
+FOOTER
+========================================= -->
+
 <footer class="footer">
 
     <div class="container footer-grid">
 
         <!-- COLUMN 1 -->
+
         <div>
 
-            <h2 class="footer-logo">Smile Embassy</h2>
+            <h2 class="footer-logo">
+                Smile Embassy
+            </h2>
 
             <p>
                 Modern family dental care in Lagos —
-                warm, trusted, and affordable.
+                trusted, warm, and affordable.
             </p>
-
-            <a href="#">Instagram</a>
 
         </div>
 
         <!-- COLUMN 2 -->
+
         <div>
 
             <h3>Quick Links</h3>
 
             <ul>
+
                 <li><a href="index.html">Home</a></li>
+
                 <li><a href="about.html">About</a></li>
+
                 <li><a href="services.html">Services</a></li>
+
                 <li><a href="appointment.html">Book</a></li>
+
                 <li><a href="blog.html">Blog</a></li>
+
                 <li><a href="contact.html">Contact</a></li>
+
             </ul>
 
         </div>
 
         <!-- COLUMN 3 -->
+
         <div>
 
             <h3>Our Services</h3>
 
             <ul>
-                <li>Family Dental Care</li>
-                <li>Scaling & Polishing</li>
+
                 <li>Teeth Whitening</li>
-                <li>Braces</li>
-                <li>Veneers</li>
+
+                <li>Dental Braces</li>
+
+                <li>Scaling & Polishing</li>
+
                 <li>Dental Implants</li>
-                <li>Gum Treatment</li>
-                <li>Tooth Extraction</li>
-                <li>Dentures & Bridges</li>
+
+                <li>Family Dental Care</li>
+
             </ul>
 
         </div>
 
         <!-- COLUMN 4 -->
+
         <div>
 
             <h3>Contact Info</h3>
 
             <p>📍 Onipanu, Lagos</p>
+
             <p>📞 08119030009</p>
+
             <p>📧 smileembassydentalng@gmail.com</p>
-            <p>🕐 Mon–Sat: 9am–6pm</p>
+
+            <p>🕐 Mon – Sat: 9am – 6pm</p>
 
         </div>
 
     </div>
 
-    <!-- BOTTOM -->
+    <!-- FOOTER BOTTOM -->
+
     <div class="footer-bottom">
 
         <p>
             © 2026 Smile Embassy Dental Specialist Clinic.
-            All rights reserved.
+            All Rights Reserved.
         </p>
-
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms</a>
-        </div>
 
     </div>
 
 </footer>
 
+<!-- =========================================
+MOBILE CTA BAR
+========================================= -->
+
+<div class="mobile-cta-bar">
+
+    <a href="tel:+2348119030009"
+    class="call-btn phone-click">
+
+        📞 Call
+
+    </a>
+
+    <a href="https://wa.me/2348119030009"
+    class="whatsapp-btn whatsapp-click">
+
+        💬 WhatsApp
+
+    </a>
+
+</div>
+
+<!-- =========================================
+NAVBAR SCRIPT
+========================================= -->
+
+<script>
+
+function openMenu() {
+
+    document.getElementById("mobileMenu").style.right = "0";
+
+}
+
+function closeMenu() {
+
+    document.getElementById("mobileMenu").style.right = "-100%";
+
+}
+
+</script>
+
+<!-- =========================================
+CONVERSION TRACKING
+========================================= -->
+
+<script>
+
+/* PHONE CLICK */
+
+document.querySelectorAll('.phone-click')
+.forEach(function(button) {
+
+    button.addEventListener('click', function() {
+
+        gtag('event', 'phone_click', {
+
+            event_category: 'Contact',
+            event_label: 'Phone Call'
+
+        });
+
+    });
+
+});
+
+/* WHATSAPP CLICK */
+
+document.querySelectorAll('.whatsapp-click')
+.forEach(function(button) {
+
+    button.addEventListener('click', function() {
+
+        gtag('event', 'whatsapp_click', {
+
+            event_category: 'Contact',
+            event_label: 'WhatsApp Click'
+
+        });
+
+    });
+
+});
+
+</script>
+
 </body>
+
 </html>

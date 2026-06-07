@@ -1,121 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- META -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>Services | Smile Embassy</title>
+
+    <link rel="signup" href ="signup.html">
+    <link rel="login" href ="login.html">
+
+
+    <!-- CSS -->
     <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="login.html">Login</a>
-    <a href="signup.html">Sign Up</a>
-    <button onclick="openModal()" class="book-btn">
+    href="style.css">
 
-Explore Services
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-</button>
-</head>
-<title>Our Services</title>
-<body>
+    <!-- FAVICON -->
+    <link rel="icon"
+    type="image/jpeg"
+    href="Images/favicon.jpg">
+
+    <!-- =========================================
+    GOOGLE TAG MANAGER
+    ========================================= -->
+
+    <script>
+    (function(w,d,s,l,i){
+
+        w[l]=w[l]||[];
+
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event:'gtm.js'
+        });
+
+        var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),
+        dl=l!='dataLayer' ? '&l='+l : '';
+
+        j.async=true;
+
+        j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+
+        f.parentNode.insertBefore(j,f);
+
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');
+    </script>
+
+    <!-- =========================================
+    GOOGLE ANALYTICS 4
+    ========================================= -->
+
+    <script async
+    src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX">
+    </script>
+
     <script>
 
-function openModal() {
+    window.dataLayer = window.dataLayer || [];
 
-    document.getElementById("authModal").style.display = "flex";
-}
+    function gtag(){
 
-function closeModal() {
+        dataLayer.push(arguments);
 
-    document.getElementById("authModal").style.display = "none";
-}
+    }
 
-</script>
-    <!-- WHATSAPP BUTTON -->
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+
+    </script>
+
+</head>
+
+<body>
+
+<!-- =========================================
+GOOGLE TAG MANAGER (noscript)
+========================================= -->
+
+<noscript>
+
+    <iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0"
+    width="0"
+    style="display:none;visibility:hidden">
+    </iframe>
+
+</noscript>
+
+<!-- =========================================
+TOP BAR
+========================================= -->
+
+<div class="top-bar">
+
+    <div class="container top-bar-flex">
+
+        <div class="top-contact">
+
+            <a href="tel:+2348119030009"
+            class="phone-click">
+
+                📞 08119030009
+
+            </a>
+
+            <span>|</span>
+
+            🕐 Mon – Sat: 9am – 6pm
+
+        </div>
+
+        <div class="top-socials">
+
+            <a href="https://wa.me/2348119030009"
+            target="_blank"
+            class="whatsapp-click">
+
+                WhatsApp
+
+            </a>
+
+            <a href="https://instagram.com/smile_embassy"
+            target="_blank">
+
+                Instagram
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================================
+HEADER
+========================================= -->
+
+<header class="main-header">
+
+    <div class="container header-flex">
+
+        <!-- LOGO -->
+
+        <a href="index.html"
+        class="logo">
+
+            Smile Embassy
+
+        </a>
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html"
+            class="active">
+
+                Services
+
+            </a>
+
+            <a href="blog.html">Blog</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="testimonials.html">Testimonials</a>
+
+        </nav>
+
+        <!-- BUTTON -->
+
+        <a href="appointment.html"
+        class="header-btn">
+
+            Book Appointment
+
+        </a>
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <div class="menu-toggle"
+        onclick="openMenu()">
+
+            ☰
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- =========================================
+MOBILE MENU
+========================================= -->
+
+<div class="mobile-menu"
+id="mobileMenu">
+
+    <div class="mobile-menu-top">
+
+        <h2>Smile Embassy</h2>
+
+        <span onclick="closeMenu()">
+            ✕
+        </span>
+
+    </div>
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="blog.html">Blog</a>
+
+    <a href="contact.html">Contact</a>
+
+    <a href="appointment.html"
+    class="mobile-book-btn">
+
+        Book Appointment
+
+    </a>
+
+</div>
+
+<!-- =========================================
+WHATSAPP FLOAT BUTTON
+========================================= -->
 
 <a href="https://wa.me/2348119030009?text=Hello%20Smile%20Embassy!%20I%20want%20to%20book%20an%20appointment."
-
-class="whatsapp-float"
-
+class="whatsapp-float whatsapp-click"
 target="_blank">
 
-💬
+    <i class="fab fa-whatsapp"></i>
 
 </a>
 
-<!-- POPUP -->
+<!-- =========================================
+SERVICES HERO
+========================================= -->
 
-<div class="whatsapp-popup" id="whatsappPopup">
-
-Need help? Chat with us!
-
-</div>
-    <div class="services-card">
-        <h2>Family Dental Care</h2>
-        <p>Gentle, comprehensive checkups and treatment for every age, from toddlers to grandparents.</p>
-        <h2>Scaling and Polishing</h2>
-        <p>A deep clean that lifts away plaque, stains, and tartar — leaving teeth visibly brighter.</p>
-        <h2>Teeth Whitening</h2>
-        <p>Safely brighten your smile by several shades in a single visit, using professional-grade whitening.</p>
-        <h2>Dental Braces (Orthodontics)</h2>
-        <p>Straighten teeth and correct bites for kids, teens, and adults — with modern, comfortable braces.</p>
-        <h2>Veeners</h2>
-        <p>Custom, natural-looking smile makeovers.</p>
-        <h2>Dental Implants</h2>
-        <p>Permanent replacements for missing teeth.</p>
-
-    </div>
-    <section class="services-hero">
+<section class="services-hero">
 
     <div class="services-overlay">
 
-        <div class="services-content">
+        <div class="container services-content">
 
             <h1>
+
                 Every dental service your family needs.
                 One trusted clinic.
+
             </h1>
 
             <p>
-                From your child's first cleaning to your dream smile makeover —
-                explore the full range of treatments at Smile Embassy.
+
+                From your child’s first dental visit
+                to complete smile makeovers,
+                Smile Embassy provides expert care
+                for every stage of life.
+
             </p>
 
-            <a href="#services-section" class="services-btn">
+            <a href="#services-section"
+            class="btn-primary">
+
                 Explore Services
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- LOGIN REQUIRED MODAL -->
-
-<div class="auth-modal" id="authModal">
-
-    <div class="auth-modal-box">
-
-        <span class="close-modal" onclick="closeModal()">
-            &times;
-        </span>
-
-        <h2>Login Required</h2>
-
-        <p>
-            Please login or create an account to continue.
-        </p>
-
-        <div class="modal-buttons">
-
-            <a href="login.html" class="modal-login-btn">
-
-                Login
-
-            </a>
-
-            <a href="signup.html" class="modal-signup-btn">
-
-                Create Account
 
             </a>
 
@@ -123,477 +293,527 @@ Need help? Chat with us!
 
     </div>
 
-</div>
-<section id="services-section" class="services-grid">
-
-    <!-- Card 1 -->
-    <div class="service-card">
-        <i class="fas fa-users"></i>
-        <h3>Family Dental Care</h3>
-        <p>Gentle, comprehensive checkups and treatment for every age, from toddlers to grandparents.</p>
-        <a href="family-dental.html">Learn More</a>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="service-card">
-        <i class="fas fa-teeth"></i>
-        <h3>Scaling and Polishing</h3>
-        <p>A deep clean that lifts away plaque, stains, and tartar — leaving teeth visibly brighter.</p>
-        <a href="scaling-polishing.html">Learn More</a>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="service-card">
-        <i class="fas fa-smile"></i>
-        <h3>Teeth Whitening</h3>
-        <p>Safely brighten your smile by several shades in a single visit using professional whitening.</p>
-        <a href="whitening.html">Learn More</a>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="service-card">
-        <i class="fas fa-tooth"></i>
-        <h3>Dental Braces (Orthodontics)</h3>
-        <p>Straighten teeth and correct bites for kids, teens, and adults with modern braces.</p>
-        <a href="braces.html">Learn More</a>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="service-card">
-        <i class="fas fa-star"></i>
-        <h3>Veneers</h3>
-        <p>Ultra-thin custom shells that transform chipped, stained, or uneven teeth into a flawless smile.</p>
-        <a href="veneers.html">Learn More</a>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="service-card">
-        <i class="fas fa-teeth-open"></i>
-        <h3>Dental Implants</h3>
-        <p>Permanent, natural-looking replacements for missing teeth restoring your bite and confidence.</p>
-        <a href="implants.html">Learn More</a>
-    </div>
-
-    <!-- Card 7 -->
-    <div class="service-card">
-        <i class="fas fa-heartbeat"></i>
-        <h3>Gum Treatment</h3>
-        <p>Specialist care for bleeding, swollen, or receding gums protecting your smile foundation.</p>
-        <a href="gum-treatment.html">Learn More</a>
-    </div>
-
-    <!-- Card 8 -->
-    <div class="service-card">
-        <i class="fas fa-syringe"></i>
-        <h3>Tooth Extraction</h3>
-        <p>Painless expert removal of damaged or overcrowded teeth with full aftercare support.</p>
-        <a href="extraction.html">Learn More</a>
-    </div>
-
-    <!-- Card 9 -->
-    <div class="service-card">
-        <i class="fas fa-procedures"></i>
-        <h3>Tooth Replacement</h3>
-        <p>Restore missing teeth with comfortable and affordable dentures or bridges.</p>
-        <a href="replacement.html">Learn More</a>
-    </div>
-
-</section>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Services | Smile Embassy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- SECTION 1 HERO -->
-<section class="services-hero">
-
-    <div class="overlay">
-
-        <div class="container">
-
-            <h1>Every dental service your family needs</h1>
-
-            <p>From cleaning to full smile makeovers — all under one trusted clinic.</p>
-
-        </div>
-
-    </div>
-
 </section>
 
-<!-- SECTION 2 SERVICE GRID -->
-<section class="services-page">
+<!-- =========================================
+SERVICES SECTION
+========================================= -->
+
+<section id="services-section"
+class="services-section">
 
     <div class="container">
 
-        <div class="services-grid-large">
+        <div class="section-title">
 
-            <!-- CARD 1 -->
-            <div class="service-card">
-                <img src="service1.jpg">
-                <h3>Family Dental Care</h3>
-                <p>Gentle care for all ages.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="service-card">
-                <img src="service2.jpg">
-                <h3>Scaling & Polishing</h3>
-                <p>Deep cleaning for healthy teeth.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="service-card">
-                <img src="service3.jpg">
-                <h3>Teeth Whitening</h3>
-                <p>Brighter smile in one visit.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <!-- CARD 4 -->
-            <div class="service-card">
-                <img src="service4.jpg">
-                <h3>Braces</h3>
-                <p>Straighten teeth comfortably.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <!-- CARD 5 -->
-            <div class="service-card">
-                <img src="service5.jpg">
-                <h3>Veneers</h3>
-                <p>Perfect smile transformation.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <!-- CARD 6 -->
-            <div class="service-card">
-                <img src="service6.jpg">
-                <h3>Dental Implants</h3>
-                <p>Permanent tooth replacement.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <!-- CARD 7 -->
-            <div class="service-card">
-                <img src="service7.jpg">
-                <h3>Gum Treatment</h3>
-                <p>Healthy gums, healthy smile.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <!-- CARD 8 -->
-            <div class="service-card">
-                <img src="service8.jpg">
-                <h3>Tooth Extraction</h3>
-                <p>Painless removal care.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <!-- CARD 9 -->
-            <div class="service-card">
-                <img src="service9.jpg">
-                <h3>Dentures & Bridges</h3>
-                <p>Restore missing teeth.</p>
-                <a href="#">Learn More</a>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- SECTION 3 CTA STRIP -->
-<section class="help-strip">
-
-    <div class="container help-flex">
-
-        <p>
-            Not sure what you need? WhatsApp us a quick photo or describe your concern,
-            and we'll guide you.
-        </p>
-
-        <a href="https://wa.me/2348119030009" class="btn-whatsapp">
-            WhatsApp Us
-        </a>
-
-    </div>
-
-</section>
-
-<!-- SECTION 4 CTA -->
-<section class="cta">
-
-    <div class="container">
-
-        <h2>Ready to book your appointment?</h2>
-
-        <a href="appointment.html" class="btn-primary">
-            Book Appointment
-        </a>
-
-    </div>
-
-</section>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Service Detail | Smile Embassy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- SECTION 1 HERO -->
-<section class="service-hero">
-
-    <div class="container hero-grid">
-
-        <!-- LEFT -->
-        <div>
-
-            <p class="breadcrumb">
-                Home › Services › Whitening
-            </p>
-
-            <h1>A whiter, brighter smile in one visit</h1>
+            <h2>
+                Our Dental Services
+            </h2>
 
             <p>
-                Safe, professional teeth whitening that transforms your smile instantly.
+                Modern dental treatments designed
+                to keep your smile healthy,
+                beautiful, and confident.
             </p>
 
-            <div class="buttons">
-                <a href="appointment.html" class="btn-primary">Book Appointment</a>
-                <a href="https://wa.me/2348119030009" class="btn-whatsapp">Ask a Question</a>
+        </div>
+
+        <div class="services-grid">
+
+            <!-- SERVICE 1 -->
+
+            <div class="service-card">
+
+                <i class="fas fa-users"></i>
+
+                <h3>
+                    Family Dental Care
+                </h3>
+
+                <p>
+                    Gentle dental care for children,
+                    adults, and seniors.
+                </p>
+
+                <a href="#">
+                    Learn More
+                </a>
+
+            </div>
+
+            <!-- SERVICE 2 -->
+
+            <div class="service-card">
+
+                <i class="fas fa-teeth"></i>
+
+                <h3>
+                    Scaling & Polishing
+                </h3>
+
+                <p>
+                    Professional cleaning that removes
+                    plaque and tartar buildup.
+                </p>
+
+                <a href="#">
+                    Learn More
+                </a>
+
+            </div>
+
+            <!-- SERVICE 3 -->
+
+            <div class="service-card">
+
+                <i class="fas fa-smile"></i>
+
+                <h3>
+                    Teeth Whitening
+                </h3>
+
+                <p>
+                    Brighten your smile safely
+                    with professional whitening.
+                </p>
+
+                <a href="#">
+                    Learn More
+                </a>
+
+            </div>
+
+            <!-- SERVICE 4 -->
+
+            <div class="service-card">
+
+                <i class="fas fa-tooth"></i>
+
+                <h3>
+                    Dental Braces
+                </h3>
+
+                <p>
+                    Straighten teeth and improve bites
+                    with modern orthodontics.
+                </p>
+
+                <a href="#">
+                    Learn More
+                </a>
+
+            </div>
+
+            <!-- SERVICE 5 -->
+
+            <div class="service-card">
+
+                <i class="fas fa-star"></i>
+
+                <h3>
+                    Veneers
+                </h3>
+
+                <p>
+                    Transform chipped or stained teeth
+                    with custom veneers.
+                </p>
+
+                <a href="#">
+                    Learn More
+                </a>
+
+            </div>
+
+            <!-- SERVICE 6 -->
+
+            <div class="service-card">
+
+                <i class="fas fa-teeth-open"></i>
+
+                <h3>
+                    Dental Implants
+                </h3>
+
+                <p>
+                    Permanent tooth replacements
+                    that look and feel natural.
+                </p>
+
+                <a href="#">
+                    Learn More
+                </a>
+
+            </div>
+
+            <!-- SERVICE 7 -->
+
+            <div class="service-card">
+
+                <i class="fas fa-heartbeat"></i>
+
+                <h3>
+                    Gum Treatment
+                </h3>
+
+                <p>
+                    Effective treatment for gum disease,
+                    bleeding gums, and infections.
+                </p>
+
+                <a href="#">
+                    Learn More
+                </a>
+
+            </div>
+
+            <!-- SERVICE 8 -->
+
+            <div class="service-card">
+
+                <i class="fas fa-syringe"></i>
+
+                <h3>
+                    Tooth Extraction
+                </h3>
+
+                <p>
+                    Safe and comfortable tooth removal
+                    performed by experts.
+                </p>
+
+                <a href="#">
+                    Learn More
+                </a>
+
+            </div>
+
+            <!-- SERVICE 9 -->
+
+            <div class="service-card">
+
+                <i class="fas fa-procedures"></i>
+
+                <h3>
+                    Dentures & Bridges
+                </h3>
+
+                <p>
+                    Restore missing teeth comfortably
+                    and confidently.
+                </p>
+
+                <a href="#">
+                    Learn More
+                </a>
+
             </div>
 
         </div>
 
-        <!-- RIGHT -->
-        <div>
-            <img src="service-hero.jpg" class="hero-img">
-        </div>
-
     </div>
 
 </section>
 
-<!-- SECTION 2 WHAT IS IT -->
-<section class="center-text">
+<!-- =========================================
+MID CTA
+========================================= -->
 
-    <div class="container small">
-
-        <h2>What is it?</h2>
-
-        <p>
-            Professional whitening removes deep stains caused by coffee, tea,
-            smoking and ageing using safe dental-grade materials.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- SECTION 3 3 STEPS -->
-<section class="steps">
-
-    <div class="container grid-3">
-
-        <div>
-            <div class="circle">1</div>
-            <h3>Consultation</h3>
-            <p>We check your teeth and gums first.</p>
-        </div>
-
-        <div>
-            <div class="circle">2</div>
-            <h3>Whitening</h3>
-            <p>Safe gel applied under supervision.</p>
-        </div>
-
-        <div>
-            <div class="circle">3</div>
-            <h3>Results</h3>
-            <p>Instant brighter smile revealed.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- SECTION 4 BENEFITS -->
-<section class="benefits">
-
-    <div class="container benefits-grid">
-
-        <img src="benefits.jpg">
-
-        <ul>
-            <li>✔ Instant visible results</li>
-            <li>✔ Safe for enamel</li>
-            <li>✔ Dentist supervised</li>
-            <li>✔ Long-lasting brightness</li>
-            <li>✔ Boosts confidence</li>
-        </ul>
-
-    </div>
-
-</section>
-
-<!-- SECTION 5 FAQ -->
-<section class="faq">
-
-    <div class="container small">
-
-        <h2>Frequently Asked Questions</h2>
-
-        <div class="faq-item">
-            <h3>Does it hurt?</h3>
-            <p>No, most patients feel nothing.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>How long does it last?</h3>
-            <p>Up to 1–3 years with proper care.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>Is it safe?</h3>
-            <p>Yes, completely dentist supervised.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- SECTION 6 CTA -->
-<section class="cta">
+<section class="mid-cta">
 
     <div class="container">
 
-        <h2>Ready to transform your smile?</h2>
+        <h2>
 
-        <a href="appointment.html" class="btn-primary">
-            Book Appointment
+            Not sure which treatment is right for you?
+
+        </h2>
+
+        <p>
+
+            Speak with our dental team today
+            for professional guidance.
+
+        </p>
+
+        <a href="https://wa.me/2348119030009"
+        class="btn-whatsapp whatsapp-click">
+
+            WhatsApp Us
+
         </a>
 
     </div>
 
 </section>
 
-<!-- SECTION 7 RELATED SERVICES -->
-<section class="related">
+<!-- =========================================
+BOTTOM CTA
+========================================= -->
+
+<section class="bottom-cta">
 
     <div class="container">
 
-        <h2>Related Services</h2>
+        <h2>
 
-        <div class="grid-3">
+            Ready to book your appointment?
 
-            <div class="card">Scaling & Polishing</div>
-            <div class="card">Veneers</div>
-            <div class="card">Family Dental Care</div>
+        </h2>
+
+        <p>
+
+            Let Smile Embassy help you achieve
+            a healthier, brighter smile.
+
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="appointment.html"
+            class="btn-primary">
+
+                Book Appointment
+
+            </a>
+
+            <a href="https://wa.me/2348119030009"
+            class="btn-whatsapp whatsapp-click">
+
+                WhatsApp Us
+
+            </a>
 
         </div>
 
     </div>
 
 </section>
-<!-- FOOTER -->
+
+<!-- =========================================
+FOOTER
+========================================= -->
+
 <footer class="footer">
 
     <div class="container footer-grid">
 
         <!-- COLUMN 1 -->
+
         <div>
 
-            <h2 class="footer-logo">Smile Embassy</h2>
+            <h2 class="footer-logo">
+
+                Smile Embassy
+
+            </h2>
 
             <p>
+
                 Modern family dental care in Lagos —
                 warm, trusted, and affordable.
-            </p>
 
-            <a href="#">Instagram</a>
+            </p>
 
         </div>
 
         <!-- COLUMN 2 -->
+
         <div>
 
-            <h3>Quick Links</h3>
+            <h3>
+                Quick Links
+            </h3>
 
             <ul>
+
                 <li><a href="index.html">Home</a></li>
+
                 <li><a href="about.html">About</a></li>
+
                 <li><a href="services.html">Services</a></li>
-                <li><a href="appointment.html">Book</a></li>
+
                 <li><a href="blog.html">Blog</a></li>
+
                 <li><a href="contact.html">Contact</a></li>
+
             </ul>
 
         </div>
 
         <!-- COLUMN 3 -->
+
         <div>
 
-            <h3>Our Services</h3>
+            <h3>
+                Our Services
+            </h3>
 
             <ul>
-                <li>Family Dental Care</li>
-                <li>Scaling & Polishing</li>
+
                 <li>Teeth Whitening</li>
-                <li>Braces</li>
-                <li>Veneers</li>
+
+                <li>Dental Braces</li>
+
+                <li>Scaling & Polishing</li>
+
                 <li>Dental Implants</li>
-                <li>Gum Treatment</li>
-                <li>Tooth Extraction</li>
-                <li>Dentures & Bridges</li>
+
+                <li>Family Dental Care</li>
+
             </ul>
 
         </div>
 
         <!-- COLUMN 4 -->
+
         <div>
 
-            <h3>Contact Info</h3>
+            <h3>
+                Contact Info
+            </h3>
 
-            <p>📍 Onipanu, Lagos</p>
-            <p>📞 08119030009</p>
-            <p>📧 smileembassydentalng@gmail.com</p>
-            <p>🕐 Mon–Sat: 9am–6pm</p>
+            <p>
+                📍 Onipanu, Lagos
+            </p>
+
+            <p>
+
+                📞
+
+                <a href="tel:+2348119030009"
+                class="phone-click">
+
+                    08119030009
+
+                </a>
+
+            </p>
+
+            <p>
+
+                📧
+
+                <a href="mailto:smileembassydentalng@gmail.com">
+
+                    smileembassydentalng@gmail.com
+
+                </a>
+
+            </p>
+
+            <p>
+                🕐 Mon – Sat: 9am – 6pm
+            </p>
 
         </div>
 
     </div>
 
-    <!-- BOTTOM -->
+    <!-- FOOTER BOTTOM -->
+
     <div class="footer-bottom">
 
         <p>
+
             © 2026 Smile Embassy Dental Specialist Clinic.
             All rights reserved.
-        </p>
 
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms</a>
-        </div>
+        </p>
 
     </div>
 
 </footer>
+
+<!-- =========================================
+MOBILE CTA BAR
+========================================= -->
+
+<div class="mobile-cta-bar">
+
+    <a href="tel:+2348119030009"
+    class="call-btn phone-click">
+
+        📞 Call
+
+    </a>
+
+    <a href="https://wa.me/2348119030009"
+    class="whatsapp-btn whatsapp-click">
+
+        💬 WhatsApp
+
+    </a>
+
+</div>
+
+<!-- =========================================
+NAVBAR SCRIPT
+========================================= -->
+
+<script>
+
+function openMenu() {
+
+    document.getElementById("mobileMenu").style.right = "0";
+
+}
+
+function closeMenu() {
+
+    document.getElementById("mobileMenu").style.right = "-100%";
+
+}
+
+</script>
+
+<!-- =========================================
+CONVERSION TRACKING SCRIPT
+========================================= -->
+
+<script>
+
+/* =========================
+PHONE CLICK EVENT
+========================= */
+
+document.querySelectorAll('.phone-click')
+.forEach(function(button){
+
+    button.addEventListener('click', function(){
+
+        gtag('event', 'phone_click', {
+
+            event_category: 'Contact',
+            event_label: 'Phone Call'
+
+        });
+
+    });
+
+});
+
+/* =========================
+WHATSAPP CLICK EVENT
+========================= */
+
+document.querySelectorAll('.whatsapp-click')
+.forEach(function(button){
+
+    button.addEventListener('click', function(){
+
+        gtag('event', 'whatsapp_click', {
+
+            event_category: 'Contact',
+            event_label: 'WhatsApp Click'
+
+        });
+
+    });
+
+});
+
+</script>
+
 </body>
 </html>
-    

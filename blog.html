@@ -10,340 +10,373 @@
 
     <title>Smile Embassy Blog</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- FONT AWESOME -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- GOOGLE TAG MANAGER -->
+    <script>
+    (function(w,d,s,l,i){
+
+        w[l]=w[l]||[];
+
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event:'gtm.js'
+        });
+
+        var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),
+        dl=l!='dataLayer'?'&l='+l:'';
+
+        j.async=true;
+
+        j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+
+        f.parentNode.insertBefore(j,f);
+
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');
+    </script>
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async
+    src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX">
+    </script>
+
+    <script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+
+    </script>
 
 </head>
 
 <body>
-    <!-- FLOATING WHATSAPP BUTTON -->
 
-<a href="https://wa.me/2348119030009?text=Hello%20Smile%20Embassy!%20👋%20I'd%20like%20to%20ask%20about%20your%20services%20or%20book%20an%20appointment."
+<!-- GTM NOSCRIPT -->
 
-class="whatsapp-float"
+<noscript>
 
-target="_blank">
+    <iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0"
+    width="0"
+    style="display:none;visibility:hidden">
+    </iframe>
 
-    💬
+</noscript>
 
-</a>
+<!-- TOP BAR -->
 
-<!-- WHATSAPP POPUP -->
+<div class="top-bar">
 
-<div class="whatsapp-popup" id="whatsappPopup">
+    <div class="container top-bar-flex">
 
-    Need help? Chat with us!
+        <div class="top-contact">
+
+            <a href="tel:+2348119030009"
+            class="phone-click">
+
+                📞 08119030009
+
+            </a>
+
+            <span>|</span>
+
+            🕐 Mon – Sat: 9am – 6pm
+
+        </div>
+
+        <div class="top-socials">
+
+            <a href="https://wa.me/2348119030009"
+            target="_blank"
+            class="whatsapp-click">
+
+                WhatsApp
+
+            </a>
+
+            <a href="https://instagram.com/smile_embassy"
+            target="_blank">
+
+                Instagram
+
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
 
-    <!-- HERO SECTION -->
+<!-- HEADER -->
 
-    <section class="blog-hero">
+<header class="main-header">
 
-        <div class="hero-overlay">
+    <div class="container header-flex">
 
-            <div class="hero-content">
+        <a href="index.html"
+        class="logo">
 
-                <h1>
-                    Smile smarter. Live healthier.
-                </h1>
+            Smile Embassy
+
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="blog.html" class="active">Blog</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="testimonials.html">Testimonials</a>
+
+        </nav>
+
+        <a href="appointment.html"
+        class="header-btn">
+
+            Book Appointment
+
+        </a>
+
+        <div class="menu-toggle"
+        onclick="openMenu()">
+
+            ☰
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu"
+id="mobileMenu">
+
+    <div class="mobile-menu-top">
+
+        <h2>Smile Embassy</h2>
+
+        <span onclick="closeMenu()">
+            ✕
+        </span>
+
+    </div>
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="blog.html">Blog</a>
+
+    <a href="contact.html">Contact</a>
+
+    <a href="appointment.html"
+    class="mobile-book-btn">
+
+        Book Appointment
+
+    </a>
+
+</div>
+
+<!-- WHATSAPP FLOAT -->
+
+<a href="https://wa.me/2348119030009"
+class="whatsapp-float whatsapp-click"
+target="_blank">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- BLOG HERO -->
+
+<section class="blog-hero">
+
+    <div class="hero-overlay">
+
+        <div class="container hero-content">
+
+            <h1>
+                Smile Smarter. Live Healthier.
+            </h1>
+
+            <p class="hero-highlight">
+
+                Dental tips, oral health advice,
+                and modern dentistry insights
+                from Smile Embassy Dental Specialist Clinic.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURED POST -->
+
+<section class="featured-post-section">
+
+    <div class="container">
+
+        <div class="featured-post">
+
+            <img src="Images/blog1.jpg"
+            alt="Dental Tips">
+
+            <div class="featured-content">
+
+                <span class="category-tag">
+                    Oral Health Tips
+                </span>
+
+                <h2>
+                    7 Daily Habits That Keep Your Smile Bright
+                </h2>
 
                 <p>
-                    Practical dental advice, family-friendly tips,
-                    and the latest in modern dentistry —
-                    from the team at Smile Embassy.
+                    Learn simple habits dentists recommend
+                    for healthier teeth and fresher breath.
                 </p>
+
+                <a href="#"
+                class="btn-primary">
+
+                    Read More
+
+                </a>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- BLOG LAYOUT -->
+</section>
 
-    <section class="blog-section">
+<!-- BLOG POSTS -->
 
-        <div class="blog-container">
+<section class="blog-posts">
 
-            <!-- MAIN BLOG CONTENT -->
+    <div class="container">
 
-            <div class="blog-main">
+        <div class="blog-grid">
 
-                <!-- FEATURED POST -->
+            <!-- POST 1 -->
 
-                <div class="featured-post">
+            <div class="post-card">
 
-                    <img src="featured-post.jpg"
-                    alt="Featured Post">
+                <img src="Images/blog2.jpg"
+                alt="Kids Dental Care">
 
-                    <div class="featured-content">
+                <div class="post-content">
 
-                        <span class="category-tag">
-                            Oral Health Tips
-                        </span>
-
-                        <h2>
-                            7 Daily Habits That Keep Your Smile Bright
-                        </h2>
-
-                        <p>
-                            Discover the simple everyday habits
-                            dentists recommend for healthier teeth,
-                            fresher breath, and long-term oral health.
-                        </p>
-
-                        <a href="#"
-                        class="read-more-btn">
-
-                            Read More
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- RECENT POSTS GRID -->
-
-                <div class="recent-posts-grid">
-
-                    <!-- POST 1 -->
-
-                    <div class="post-card">
-
-                        <img src="blog1.jpg"
-                        alt="Blog">
-
-                        <span class="category-tag">
-                            Kids' Teeth
-                        </span>
-
-                        <h3>
-                            How To Help Children Overcome Fear Of Dentists
-                        </h3>
-
-                        <small>
-                            May 22, 2026
-                        </small>
-
-                        <p>
-                            Practical ways parents can make
-                            dental visits easier and stress-free.
-                        </p>
-
-                        <a href="#">
-                            Read More
-                        </a>
-
-                    </div>
-
-                    <!-- POST 2 -->
-
-                    <div class="post-card">
-
-                        <img src="blog2.jpg"
-                        alt="Blog">
-
-                        <span class="category-tag">
-                            Smile Makeovers
-                        </span>
-
-                        <h3>
-                            Veneers vs Whitening: Which Is Right For You?
-                        </h3>
-
-                        <small>
-                            May 18, 2026
-                        </small>
-
-                        <p>
-                            Learn the difference between
-                            veneers and professional whitening.
-                        </p>
-
-                        <a href="#">
-                            Read More
-                        </a>
-
-                    </div>
-
-                    <!-- POST 3 -->
-
-                    <div class="post-card">
-
-                        <img src="blog3.jpg"
-                        alt="Blog">
-
-                        <span class="category-tag">
-                            Family Dental Care
-                        </span>
-
-                        <h3>
-                            Why Regular Dental Checkups Matter
-                        </h3>
-
-                        <small>
-                            May 10, 2026
-                        </small>
-
-                        <p>
-                            Preventive care saves money,
-                            protects teeth, and catches issues early.
-                        </p>
-
-                        <a href="#">
-                            Read More
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- PAGINATION -->
-
-                <div class="pagination">
-
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-
-                </div>
-
-            </div>
-
-            <!-- SIDEBAR -->
-
-            <aside class="blog-sidebar">
-
-                <!-- SEARCH -->
-
-                <div class="sidebar-widget">
-
-                    <h3>Search</h3>
-
-                    <input type="text"
-                    placeholder="Search blog posts">
-
-                </div>
-
-                <!-- CATEGORIES -->
-
-                <div class="sidebar-widget">
-
-                    <h3>Categories</h3>
-
-                    <ul>
-
-                        <li>
-                            Family Dental Care
-                        </li>
-
-                        <li>
-                            Smile Makeovers
-                        </li>
-
-                        <li>
-                            Kids' Teeth
-                        </li>
-
-                        <li>
-                            Oral Health Tips
-                        </li>
-
-                        <li>
-                            Behind the Embassy
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <!-- POPULAR POSTS -->
-
-                <div class="sidebar-widget">
-
-                    <h3>Popular Posts</h3>
-
-                    <p>
-                        5 Signs You Need A Dental Cleaning
-                    </p>
-
-                    <p>
-                        Best Foods For Strong Teeth
-                    </p>
-
-                    <p>
-                        How Often Should You Replace Your Toothbrush?
-                    </p>
-
-                </div>
-
-                <!-- CTA CARD -->
-
-                <div class="sidebar-cta">
+                    <span class="category-tag">
+                        Kids Dental Care
+                    </span>
 
                     <h3>
-                        Ready For A Healthier Smile?
+                        Helping Children Feel Comfortable At The Dentist
                     </h3>
 
                     <p>
-                        Book your appointment with Smile Embassy today.
+                        Easy ways parents can make
+                        dental visits stress-free.
                     </p>
 
-                    <a href="appointment.html">
-
-                        Book Appointment
-
+                    <a href="#">
+                        Read More
                     </a>
 
                 </div>
 
-            </aside>
+            </div>
 
-        </div>
+            <!-- POST 2 -->
 
-    </section>
-    <!DOCTYPE html>
-<html lang="en">
+            <div class="post-card">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Blog | Smile Embassy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+                <img src="Images/blog3.jpg"
+                alt="Teeth Whitening">
 
-<body>
+                <div class="post-content">
 
-<!-- SECTION 1 HERO -->
-<section class="blog-hero">
+                    <span class="category-tag">
+                        Smile Makeovers
+                    </span>
 
-    <div class="container">
+                    <h3>
+                        Veneers vs Teeth Whitening:
+                        Which Is Better?
+                    </h3>
 
-        <h1>Smile smarter. Live healthier.</h1>
+                    <p>
+                        Understand the difference between veneers
+                        and whitening treatments.
+                    </p>
 
-        <p>Dental tips, clinic updates, and oral health advice.</p>
+                    <a href="#">
+                        Read More
+                    </a>
 
-    </div>
+                </div>
 
-</section>
+            </div>
 
-<!-- SECTION 2 FEATURED POST -->
-<section class="featured-post">
+            <!-- POST 3 -->
 
-    <div class="container">
+            <div class="post-card">
 
-        <div class="featured-card">
+                <img src="Images/blog4.jpg"
+                alt="Dental Checkup">
 
-            <img src="blog1.jpg">
+                <div class="post-content">
 
-            <div>
-                <h2>How to keep your teeth healthy every day</h2>
-                <p>Simple habits that protect your smile for life.</p>
+                    <span class="category-tag">
+                        Family Dental Care
+                    </span>
 
-                <a href="post.html">Read More</a>
+                    <h3>
+                        Why Regular Dental Checkups Matter
+                    </h3>
+
+                    <p>
+                        Preventive care protects your smile
+                        and reduces future dental costs.
+                    </p>
+
+                    <a href="#">
+                        Read More
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
@@ -352,122 +385,109 @@ target="_blank">
 
 </section>
 
-<!-- SECTION 3 BLOG GRID -->
-<section class="blog-grid">
+<!-- CTA SECTION -->
 
-    <div class="container grid-3">
-
-        <div class="post-card">
-            <img src="blog2.jpg">
-            <h3>Teeth Whitening Tips</h3>
-            <p>Safe ways to brighten your smile.</p>
-        </div>
-
-        <div class="post-card">
-            <img src="blog3.jpg">
-            <h3>Braces Care Guide</h3>
-            <p>How to maintain braces properly.</p>
-        </div>
-
-        <div class="post-card">
-            <img src="blog4.jpg">
-            <h3>Kids Oral Health</h3>
-            <p>Early habits that matter.</p>
-        </div>
-
-    </div>
-
-    <!-- SIMPLE PAGINATION -->
-    <div class="pagination">
-        <a href="#">Previous</a>
-        <a href="#">Next</a>
-    </div>
-
-</section>
-
-<!-- SECTION 4 CTA -->
-<section class="cta">
+<section class="cta-section">
 
     <div class="container">
 
-        <h2>Need dental help today?</h2>
+        <h2>
+            Need Dental Care Today?
+        </h2>
 
-        <a href="appointment.html" class="btn-primary">
-            Book Appointment
-        </a>
+        <p>
+            Book your appointment with Smile Embassy today.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="appointment.html"
+            class="header-btn">
+
+                Book Appointment
+
+            </a>
+
+            <a href="https://wa.me/2348119030009"
+            class="btn-whatsapp whatsapp-click">
+
+                WhatsApp Us
+
+            </a>
+
+        </div>
 
     </div>
 
 </section>
+
 <!-- FOOTER -->
+
 <footer class="footer">
 
     <div class="container footer-grid">
 
-        <!-- COLUMN 1 -->
         <div>
 
-            <h2 class="footer-logo">Smile Embassy</h2>
+            <h2 class="footer-logo">
+                Smile Embassy
+            </h2>
 
             <p>
-                Modern family dental care in Lagos —
-                warm, trusted, and affordable.
+                Modern family dental care in Lagos.
             </p>
-
-            <a href="#">Instagram</a>
 
         </div>
 
-        <!-- COLUMN 2 -->
         <div>
 
             <h3>Quick Links</h3>
 
             <ul>
+
                 <li><a href="index.html">Home</a></li>
+
                 <li><a href="about.html">About</a></li>
+
                 <li><a href="services.html">Services</a></li>
-                <li><a href="appointment.html">Book</a></li>
-                <li><a href="blog.html">Blog</a></li>
+
                 <li><a href="contact.html">Contact</a></li>
+
             </ul>
 
         </div>
 
-        <!-- COLUMN 3 -->
-        <div>
-
-            <h3>Our Services</h3>
-
-            <ul>
-                <li>Family Dental Care</li>
-                <li>Scaling & Polishing</li>
-                <li>Teeth Whitening</li>
-                <li>Braces</li>
-                <li>Veneers</li>
-                <li>Dental Implants</li>
-                <li>Gum Treatment</li>
-                <li>Tooth Extraction</li>
-                <li>Dentures & Bridges</li>
-            </ul>
-
-        </div>
-
-        <!-- COLUMN 4 -->
         <div>
 
             <h3>Contact Info</h3>
 
             <p>📍 Onipanu, Lagos</p>
-            <p>📞 08119030009</p>
-            <p>📧 smileembassydentalng@gmail.com</p>
-            <p>🕐 Mon–Sat: 9am–6pm</p>
+
+            <p>
+
+                📞
+
+                <a href="tel:+2348119030009"
+                class="phone-click">
+
+                    08119030009
+
+                </a>
+
+            </p>
+
+            <p>
+                📧 smileembassydentalng@gmail.com
+            </p>
+
+            <p>
+                🕐 Mon – Sat: 9am – 6pm
+            </p>
 
         </div>
 
     </div>
 
-    <!-- BOTTOM -->
     <div class="footer-bottom">
 
         <p>
@@ -475,14 +495,89 @@ target="_blank">
             All rights reserved.
         </p>
 
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms</a>
-        </div>
-
     </div>
 
 </footer>
+
+<!-- MOBILE CTA BAR -->
+
+<div class="mobile-cta-bar">
+
+    <a href="tel:+2348119030009"
+    class="call-btn phone-click">
+
+        📞 Call
+
+    </a>
+
+    <a href="https://wa.me/2348119030009"
+    class="whatsapp-btn whatsapp-click">
+
+        💬 WhatsApp
+
+    </a>
+
+</div>
+
+<!-- MOBILE MENU SCRIPT -->
+
+<script>
+
+function openMenu() {
+
+    document.getElementById("mobileMenu").style.right = "0";
+
+}
+
+function closeMenu() {
+
+    document.getElementById("mobileMenu").style.right = "-100%";
+
+}
+
+</script>
+
+<!-- CONVERSION TRACKING -->
+
+<script>
+
+/* PHONE CLICK */
+
+document.querySelectorAll('.phone-click')
+.forEach(function(button){
+
+    button.addEventListener('click', function(){
+
+        gtag('event', 'phone_click', {
+
+            event_category: 'Contact',
+            event_label: 'Phone Call'
+
+        });
+
+    });
+
+});
+
+/* WHATSAPP CLICK */
+
+document.querySelectorAll('.whatsapp-click')
+.forEach(function(button){
+
+    button.addEventListener('click', function(){
+
+        gtag('event', 'whatsapp_click', {
+
+            event_category: 'Contact',
+            event_label: 'WhatsApp Click'
+
+        });
+
+    });
+
+});
+
+</script>
 
 </body>
 </html>
